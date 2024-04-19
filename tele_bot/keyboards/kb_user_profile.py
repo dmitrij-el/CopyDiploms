@@ -23,8 +23,7 @@ from tele_bot.data.models import User, Gender, ChannelCom, City, db_beahea
 
 def main_menu() -> InlineKeyboardMarkup:
     menu_buttons = [
-        [InlineKeyboardButton(text="Погода ", callback_data="weather_menu"),
-         InlineKeyboardButton(text="Переводчик", callback_data="translator")],
+        [InlineKeyboardButton(text="Погода ", callback_data="weather_menu")],
         [InlineKeyboardButton(text="👤 Профиль ", callback_data="user_profile")]
     ]
     menu_keyboard = InlineKeyboardMarkup(inline_keyboard=menu_buttons)
